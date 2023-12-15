@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents:
+  - greet
+  - supply_info
+  - check_balance
+  - supply_account
+  - check_history
+  - goodbye
+
+responses:
+  utter_greet:
+    - text: Hello what is your name?
+  utter_supply_info:
+    - text: "hi {name}"
+  utter_check_balance:
+    - text: "what is your account number?"
+  utter_balance:
+    - text: "balance in account {acc_number} is {balance} "
+  utter_history:
+    - text: "Your recent transaction history is {history}"
+  utter_good_bye:
+    - text: "Bye {name}"
+actions:
+  - action_supply_info
+  - action_supply_account
+  - action_show_history
+  - action_good_bye
+  
+
+entities:
+  - name
+  - acc_number
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

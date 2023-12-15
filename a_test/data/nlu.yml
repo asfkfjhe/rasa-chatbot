@@ -1,0 +1,102 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Good morning
+    - Good afternoon
+    - Good evening
+    - Hello
+    - Hi
+    - Hey
+    - Howdy
+    - Greetings
+    - Hi there
+    - Hello there
+    - hi
+
+- intent: supply_info
+  examples: |
+    - My name is [supriya](name).
+    - [Supriya](name) is my name.
+    - it's me, [Supriya](name).
+    - here, [Supriya](name).
+    - My name is [Prabesh](name).
+    - [Prabesh](name) is my name.
+    - it's me, [Prabesh](name).
+    - here, [Prabesh](name).
+    - My name is [Nikki](name).
+    - [Nikki](name) is my name.
+    - it's me, [Nikki](name).
+    - here, [Nikki](name).
+
+- intent: check_balance
+  examples: |
+    - What is my current balance?
+    - Can you tell me how much money is in my account?
+    - Check my balance, please
+    - What's the balance in my account?
+    - I'd like to know my current balance
+    - Tell me the balance of my account
+    - Is there enough money in my account?
+    - How much do I have in my balance?
+    - Please check my account balance
+    - What's the remaining balance in my account?
+    - Show me my balance
+    - Verify my current account balance
+    - Display my account balance
+    - Inform me about my balance
+    - Let me know my balance
+    - I want to check my balance
+    - Any updates on my account balance?
+
+- intent: supply_account
+  examples: |
+    - My account number is [123456789](acc_number)
+    - Here's my account number: [987654321](acc_number)
+    - I'd like to share my account number: [123]]acc_number)
+    - The account number is [555-123-789](acc_number)
+    - My account number is [ABC-XYZ-123](acc_number)
+    - Here is my account number - [888-999-777](acc_number)
+    - I'm providing my account number: [123-456-789](acc_number)
+    - The account number is [9876543210](acc_number)
+    - I have an account with the number [456789012](acc_number)
+    - My account number is [112233](acc_number)
+    - Providing my account number: [XYZ-789-456](acc_number)
+    - Here's my account: [9876-5432-1098](acc_number)
+    - Account number: [654321](acc_number)
+    - [12345](acc_number) is my account number.
+    - [456789](acc_number), here take my account number.
+
+- intent: check_history
+  examples: |
+    - Can you show me my recent transactions?
+    - I'd like to check my account history.
+    - What are the latest transactions in my account?
+    - Show me the list of transactions in my account.
+    - I want to know about my recent purchases.
+    - Can you provide details of my account transactions?
+    - What transactions have occurred recently?
+    - What is my history?
+
+- intent: goodbye
+  examples: |
+    - Goodbye!
+    - Bye!
+    - See you later.
+    - Farewell!
+    - Take care.
+    - Until next time!
+    - Bye-bye!
+    - Have a great day!
+    - See you soon.
+    - Adios!
+    - Catch you later.
+    - So long!
+    - Bye for now.
+    - Until we meet again!
+    - Take it easy.
+    - Goodbye and take care!
+    - See you around.
+
+
